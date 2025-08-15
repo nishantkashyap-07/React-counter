@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Counter App - Direct Access</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #eff6ff 0%, #f9fafb 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1e40af;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            margin: 0 10px;
+        }
+        .button:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+        .features h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            color: #6b7280;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔢 React Counter Application</h1>
+        <p>A modern, interactive counter application built with React that demonstrates core React concepts including state management, event handling, and conditional rendering.</p>
+        
+        <div class="features">
+            <h3>✨ Key Features:</h3>
+            <ul>
+                <li><strong>Counter Display:</strong> Large, animated counter with color-coded values</li>
+                <li><strong>Increment/Decrement:</strong> Buttons with customizable step size</li>
+                <li><strong>Bounds Management:</strong> Set upper and lower limits</li>
+                <li><strong>Negative Values:</strong> Optional negative number support</li>
+                <li><strong>Theme Support:</strong> Light and dark mode</li>
+                <li><strong>Responsive Design:</strong> Works on all devices</li>
+                <li><strong>Settings Modal:</strong> Comprehensive configuration panel</li>
+                <li><strong>Local Storage:</strong> Persistent settings</li>
+            </ul>
+        </div>
+
+        <p><strong>To run the full React application:</strong></p>
+        <a href="http://localhost:3000" class="button">Open React App</a>
+        
+        <p style="margin-top: 20px; font-size: 14px; color: #9ca3af;">
+            Make sure the development server is running with <code>npm start</code>
+        </p>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,154 @@
+.header {
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: var(--space-8);
+}
+
+.app.dark .header {
+  border-bottom-color: var(--gray-700);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.header-left {
+  flex: 1;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--space-1);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.app.dark .app-title {
+  color: var(--gray-100);
+}
+
+.title-icon {
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+}
+
+.app-subtitle {
+  color: var(--gray-600);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.app.dark .app-subtitle {
+  color: var(--gray-400);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.theme-toggle,
+.settings-button {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  color: var(--gray-700);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  min-height: 52px;
+}
+
+.app.dark .theme-toggle,
+.app.dark .settings-button {
+  background: var(--gray-700);
+  border-color: var(--gray-600);
+  color: var(--gray-300);
+}
+
+.theme-toggle:hover,
+.settings-button:hover {
+  background: var(--gray-200);
+  border-color: var(--gray-300);
+  color: var(--gray-900);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.app.dark .theme-toggle:hover,
+.app.dark .settings-button:hover {
+  background: var(--gray-600);
+  border-color: var(--gray-500);
+  color: var(--gray-100);
+}
+
+.theme-toggle:active,
+.settings-button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: var(--space-4) 0;
+    margin-bottom: var(--space-6);
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+  
+  .app-title {
+    font-size: 1.75rem;
+    justify-content: center;
+  }
+  
+  .title-icon {
+    font-size: 2rem;
+  }
+  
+  .app-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .header-right {
+    gap: var(--space-2);
+  }
+  
+  .theme-toggle,
+  .settings-button {
+    padding: var(--space-3);
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  
+  .title-icon {
+    font-size: 1.75rem;
+  }
+  
+  .app-subtitle {
+    font-size: 0.85rem;
+  }
+} 
